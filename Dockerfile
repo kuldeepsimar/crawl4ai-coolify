@@ -6,7 +6,7 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y git
 
 # Clone specific version
-RUN git clone --branch 0.6.0rc1-r1 https://github.com/unclecode/crawl4ai.git .
+RUN git clone https://github.com/unclecode/crawl4ai.git .
 
 # Install Crawl4AI
 RUN pip install .
