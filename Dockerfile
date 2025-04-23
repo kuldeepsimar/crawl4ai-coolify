@@ -15,4 +15,4 @@ RUN pip install .
 EXPOSE 11235
 
 # Start command
-CMD ["crawl4ai", "start", "--host", "0.0.0.0"]
+CMD ["python", "-m", "crawl4ai", "start", "--host", "0.0.0.0"]
